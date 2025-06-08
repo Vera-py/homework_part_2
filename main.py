@@ -1,13 +1,10 @@
-from src.masks import get_mask_account, get_mask_card_number
+from src.widget import get_date, mask_account_card
+
+account_card = "Visa Classic 683198247673765"
+"""экспериментальный номер"""
+print(mask_account_card(account_card))
 
 
-card_number = "7000792289606361"
-"""экспериментальный номер карты"""
-mask_card_resalt = get_mask_card_number(card_number)
-print(mask_card_resalt)
-
-
-account_number = "7000792289606361"
-"""экспериментальный номер счета"""
-mask_account_resalt = get_mask_account(card_number)
-print(mask_account_resalt)
+date = "2024-03-11T02:26:18.671407"
+"""экспериментальная дата"""
+print(get_date(date))
