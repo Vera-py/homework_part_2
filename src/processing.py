@@ -1,4 +1,4 @@
-def filter_by_state(operations: list, state = "EXECUTED") -> list:
+def filter_by_state(operations: list, state="EXECUTED") -> list:
     """Функция формирует новый список банковских операций по заданному параметру"""
     selekted_operations = []
     for operation in operations:
