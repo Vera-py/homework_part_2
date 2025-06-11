@@ -1,10 +1,10 @@
-def filter_by_state(operations: list, state="EXECUTED") -> list:
+def filter_by_state(operations: list, state: str = "EXECUTED") -> list:
     """Функция формирует новый список банковских операций по заданному параметру"""
-    selekted_operations = []
+    seleсted_operations = []
     for operation in operations:
         if "state" in operation and operation["state"] == state:
-            selekted_operations.append(operation)
-    return selekted_operations
+            seleсted_operations.append(operation)
+    return seleсted_operations
 
 
 def sort_by_date(operations: list) -> list:
